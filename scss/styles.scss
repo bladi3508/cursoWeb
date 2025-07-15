@@ -1,0 +1,69 @@
+.header{
+    min-height: 1000px;
+    background: linear-gradient(to bottom right, 
+                rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)), 
+                url(../images/header-background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .slide {
+        width: 85% !important;
+        margin: 0 auto;
+    }
+}
+
+//Navbar
+@media (max-width: 995px) {
+    .navbar{
+        background: var(--bs-dark);
+
+        .navbar-nav{
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .header{
+        height: 800px !important;
+        min-height: 800px !important;
+    }
+
+    .header .text-container p{
+        width: 100% !important;
+        font-size: 16px;
+    }
+
+    .header .slide{
+        width: 90% !important;
+        margin: 0 auto;
+    }
+
+    .registro h2{
+        text-align: center;
+    }
+
+    .seminarios{
+        margin-top: 0 !important;
+        width: 90% !important;
+    }
+}
+
+.navbar-sticky{
+    opacity: 0.9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar{
+    transition: all 0.3s ease-in-out;
+}
+
+//Invitación
+.invitacion-bg{
+    background: linear-gradient(to bottom right, 
+                rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)), 
+                url(../images/invitation-background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/logo.png" />
+    <title>Corso Training</title>
+  </head>
+  <body id="home">
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img src="images/logo.png" alt="Curso Logo" width="150">
+        </a>
+
+        <!-- Menu hamburguesa -->
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavDrobdown">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarNavDrobdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#detalles" class="nav-link">Descubrir</a>
+            </li>
+            <li class="nav-item">
+              <a href="#intereses" class="nav-link">Resumen</a>
+            </li>
+            <li class="nav-item">
+              <a href="#beneficios" class="nav-link">Beneficios</a>
+            </li>
+            <li class="nav-item">
+              <a href="#suscribirse" class="nav-link">Suscribirse</a>
+            </li>
+          </ul>
+
+          <!-- Iconos de redes sociales -->
+          <span class="nav-item">
+            <span class="fa-stack">
+              <a href="">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fa-brands fa-facebook-f fa-stack-1x text-white"></i>
+              </a>
+            </span>
+          </span>
+          <span class="nav-item">
+            <span class="fa-stack">
+              <a href="">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fa-brands fa-twitter fa-stack-1x text-white"></i>
+              </a>
+            </span>
+          </span>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header py-7 vh-100">
+      <div class="container">
+        <!-- Row 1 - Texto de encavezado -->
+        <div class="row mb-5 text-center">
+          <!---->
+          <div class="col-12 text-container">
+            <!-- Texto principal -->
+            <h1 class="display-2 text-white mt-3">
+              Explora nuestros vídeos de formación y seminarios
+            </h1>
+            <p class="lead text-white m-auto mb-4">
+              Ya sea usted un principiante o un profesional experimentado, 
+              nuestro contenido cuidadosamente seleccionado le permitirá mejorar sus habilidades y ampliar sus conocimientos.
+            </p>
+            <a href="#registrar" class="btn btn-primary text-uppercase">Registrate</a>
+            <a href="#descubrir" class="btn btn-outline-light text-uppercase">Saber más</a>
+          </div>
+        </div>
+
+        <!-- Row 2 - Carusel de imagenes -->
+        <div class="row">
+          <div class="col-12">
+            <!-- Carusel de imagenes -->
+            <div id="slider" class="carousel slide" data-bs-ride="carousel" >
+
+              <!-- Indicadores -->
+              <div class="carousel-indicators">
+                <button 
+                  type="button" 
+                  class="active" 
+                  data-bs-slide-to="0" 
+                  data-bs-target="#slider"
+                  aria-current="true" 
+                  aria-label="slide 1">
+                </button>
+                <button 
+                  type="button" 
+                  data-bs-slide-to="1" 
+                  data-bs-target="#slider"
+                  aria-label="slide 2">
+                </button>
+                <button 
+                  type="button" 
+                  data-bs-slide-to="2"  
+                  data-bs-target="#slider"
+                  aria-label="slide 3">
+                </button>
+              </div>
+
+              <!-- Carusel - imagenes -->
+              <div class="carousel-inner rounded-2">
+                <!-- Imagenes -->
+                <div class="carousel-item active">
+                  <img src="images/header-slide-1.jpg" alt="" class="d-block w-100 rounded-2">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/header-slide-2.jpg" alt="" class="d-block w-100 rounded-2">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/header-slide-3.jpg" alt="" class="d-block w-100 rounded-2">
+                </div>
+              </div>
+
+              <!-- Botones laterales -->
+              <button 
+                type="button" 
+                class="carousel-control-prev"
+                data-bs-slide="prev"
+                data-bs-target="#slider">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button 
+                type="button" 
+                class="carousel-control-next"
+                data-bs-slide="next"
+                data-bs-target="#slider">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Registro -->
+    <section id="registro" class="registro bg-primary py-6 overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <!-- Columna 1 - Texto -->
+          <div class="col-md-6 col-lg-6">
+            <h2>Explora nuestros vídeos de formación y seminarios</h2>
+            <p>
+              Ya sea usted un principiante o un profesional experimentado, 
+              nuestro contenido cuidadosamente seleccionado le permitirá mejorar sus habilidades y ampliar sus conocimientos.
+            </p>
+
+            <ul class="list-unstyled vstack gap-3">
+              <li>
+                <i class="fas fa-square"></i>
+                <strong>Pulvinar vivamus</strong> Lorem ipsum dolor sit amet consectetur adipiscing elit.
+              </li>
+              <li>
+                <i class="fas fa-square"></i>
+                <strong>Pulvinar vivamus</strong> Lorem ipsum dolor sit amet consectetur adipiscing elit.
+              </li>
+              <li>
+                <i class="fas fa-square"></i>
+                <strong>Pulvinar vivamus</strong> Lorem ipsum dolor sit amet consectetur adipiscing elit.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Columna 2 - formulario -->
+          <div class="col-md-6 col-lg-6 p-4">
+            <form>
+              <!-- Campos -->
+              <div class="my-4">
+                <input type="text" class="form-control form-control-lg rounded-0 border-0" placeholder="Ingresa tu nombre">
+              </div>
+              <div class="my-4">
+                <input type="email" class="form-control form-control-lg rounded-0 border-0" placeholder="Ingresa tu correo">
+              </div>
+              <div class="my-4">
+                <input type="number" class="form-control form-control-lg rounded-0 border-0" placeholder="Ingresa tu telefono">
+              </div>
+              <!-- Terminos y condiciones -->
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" value="">
+                <label for="terminso" class="form-check-label">
+                  Acepto los terminos y condiciones.
+                </label>
+              </div>
+              <!-- Boton de enviar -->
+              <div class="d-grid mt-4">
+                <button type="submit" class="btn btn-outline-dark">Registrar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detalles 1 -->
+    <section id="detalles" class="detalles my-6 bg-light">
+      <div class="container">
+        <div class="row">
+          <!-- Imagen -->
+          <div class="col-lg-6">
+            <img src="images/instructor.jpg" alt="" class="img-fluid rounded-5 mb-4">
+          </div>
+
+          <!-- Texto -->
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <h2>Pulvinar vivamus fringilla lacus Iaculis massa nisl</h2>
+            <p>
+              Iaculis massa nisl malesuada lacinia integer nunc posuere. 
+              Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora 
+              torquent per conubia nostra inceptos himenaeosIaculis massa nisl 
+              malesuada lacinia integer nunc posuere. 
+              Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora 
+              torquent per conubia nostra inceptos himenaeos.
+            </p>
+            <p>
+              Iaculis massa nisl malesuada lacinia integer nunc posuere. 
+              Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora 
+              torquent per conubia nostra inceptos himenaeos.Iaculis massa nisl 
+              malesuada lacinia integer nunc posuere. 
+              Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora 
+              torquent per conubia nostra inceptos himenaeos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Puntos de interes -->
+    <section id="intereses" class="puntos py-6 pb-5">
+      <div class="container">
+        <!-- Titulo -->
+        <div class="row text-center mb-5">
+          <div class="col-md-8 offset-md-2">
+            <h2>
+              Explora nuestros vídeos de formación y seminarios
+            </h2>
+          </div>
+        </div>
+
+        <!-- Lista 1 -->
+        <div class="row">
+          <!-- Texto 1 -->
+          <div class="col-md-6 mb-4">
+            <div class="d-flex gap-3">
+              <!-- Numero -->
+              <div class="number">
+                <span class="bg-primary py-2 px-4 fs-3 rounded-circle">1</span>
+              </div>
+              <!-- Texto -->
+              <div>
+                <h3 class="fs-4">
+                  Ad litora torquent ipsum dolor
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Texto 2 -->
+          <div class="col-md-6 mb-4">
+            <div class="d-flex gap-3">
+              <!-- Numero -->
+              <div class="number">
+                <span class="bg-primary py-2 px-4 fs-3 rounded-circle">2</span>
+              </div>
+              <!-- Texto -->
+              <div>
+                <h3 class="fs-4">
+                  Ad litora torquent ipsum dolor
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Texto 3 -->
+          <div class="col-md-6 mb-4">
+            <div class="d-flex gap-3">
+              <!-- Numero -->
+              <div class="number">
+                <span class="bg-primary py-2 px-4 fs-3 rounded-circle">3</span>
+              </div>
+              <!-- Texto -->
+              <div>
+                <h3 class="fs-4">
+                  Ad litora torquent ipsum dolor
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Texto 4 -->
+          <div class="col-md-6 mb-4">
+            <div class="d-flex gap-3">
+              <!-- Numero -->
+              <div class="number">
+                <span class="bg-primary py-2 px-4 fs-3 rounded-circle">4</span>
+              </div>
+              <!-- Texto -->
+              <div>
+                <h3 class="fs-4">
+                  Ad litora torquent ipsum dolor
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Texto 5 -->
+          <div class="col-md-6 mb-4">
+            <div class="d-flex gap-3">
+              <!-- Numero -->
+              <div class="number">
+                <span class="bg-primary py-2 px-4 fs-3 rounded-circle">5</span>
+              </div>
+              <!-- Texto -->
+              <div>
+                <h3 class="fs-4">
+                  Ad litora torquent ipsum dolor
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Texto 6 -->
+          <div class="col-md-6 mb-4">
+            <div class="d-flex gap-3">
+              <!-- Numero -->
+              <div class="number">
+                <span class="bg-primary py-2 px-4 fs-3 rounded-circle">6</span>
+              </div>
+              <!-- Texto -->
+              <div>
+                <h3 class="fs-4">
+                  Ad litora torquent ipsum dolor
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cursos y seminarios -->
+    <section id="seminarios" class="seminarios py-6 bg-light mt-5 w-75 m-auto">
+      <div class="container">
+        <!-- Titulo -->
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center mb-5">Cursos y Seminarios</h2>
+          </div>
+        </div>
+
+        <!-- Seminarios -->
+        <div class="row">
+          <div class="col-12">
+            <div class="bg-white p-5">
+              <!-- Lista -->
+              <ul class="list-unstyled">
+                <!-- Texto 1 -->
+                <li class="border-bottom pb-3">
+                  <h5>1. Quisque faucibus</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae 
+                    pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu 
+                    aenean sed diam urna tempor. 
+                    Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada 
+                    lacinia integer nunc posuere. 
+                  </p>
+                </li>
+                <!-- Texto 2 -->
+                <li class="border-bottom pb-3 mt-5">
+                  <h5>1. Quisque faucibus</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae 
+                    pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu 
+                    aenean sed diam urna tempor. 
+                    Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada 
+                    lacinia integer nunc posuere. 
+                  </p>
+                </li>
+                <!-- Texto 3 -->
+                <li class="pb-3 mt-5">
+                  <h5>1. Quisque faucibus</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae 
+                    pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu 
+                    aenean sed diam urna tempor. 
+                    Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada 
+                    lacinia integer nunc posuere. 
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detalles 2 -->
+    <section class="detalles bg-light mb-5">
+      <div class="container">
+        <div class="row">
+          <!-- Imagen -->
+          <div class="col-lg-6">
+            <img src="images/audience.jpg" alt="" class="img-fluid rounded-5 mb-4">
+          </div>
+
+          <!-- Texto -->
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <h2>Pulvinar vivamus fringilla lacus Iaculis massa nisl</h2>
+            <p>
+              Iaculis massa nisl malesuada lacinia integer nunc posuere. 
+              Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora 
+              torquent per conubia nostra inceptos himenaeosIaculis massa nisl 
+              malesuada lacinia integer nunc posuere. 
+              Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora 
+              torquent per conubia nostra inceptos himenaeos.
+            </p>
+            <p>
+              Iaculis massa nisl malesuada lacinia integer nunc posuere. 
+              Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora 
+              torquent per conubia nostra inceptos himenaeos.Iaculis massa nisl 
+              malesuada lacinia integer nunc posuere. 
+              Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora 
+              torquent per conubia nostra inceptos himenaeos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Invitación -->
+    <section class="invitacion bg-light pb-6 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- Contenido -->
+            <div class="invitacion-bg text-center py-6 rounded-5">
+              <div class="text-white w-75 m-auto">
+                <h2 class="display-5 fw-bold">
+                  Unete a nosotros este 25 de diciembre
+                </h2>
+                <p>
+                  Duis lobortis laoreet efficitur. Integer quis elit dignissim, feugiat erat sed, cursus orci. 
+                  Sed mollis nulla nisi, ut auctor lacus condimentum id. Quisque bibendum facilisis lectus, 
+                  vel accumsan lorem sagittis ut. 
+                  Cras vel eros mi. Ut tincidunt odio mi, vitae viverra massa maximus eget. 
+                  Nulla ut lectus viverra ipsum facilisis sagittis.
+                </p>
+                <a href="#registro" class="btn btn-primary btn-lg">Unirse ahora</a>
+              </div>
+            </div>
+            <!-- Contenido fin -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section id="beneficios" class="beneficios my-5 bg-light">
+      <div class="container">
+        <!-- Titulo -->
+        <div class="row text-center mb-5">
+          <div class="col-md-8 offset-md-2">
+            <h2>Beneficios</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+
+        <!-- Cards -->
+        <!-- Row 1 -->
+        <div class="row">
+          <!-- Card 1-->
+          <div class="col-md-4">
+            <div class="card rounded-0 border-0 mb-4 p-3">
+              <!-- Cardbody -->
+              <div class="card-body text-center">
+                <i class="fas fa-atom fa-3x text-primary bg-light rounded-circle p-3 my-4"></i>
+                <h5 class="card-title">Conocimientos científicos</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui,
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 1 fin -->
+
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="card rounded-0 border-0 mb-4 p-3">
+              <!-- Cardbody -->
+              <div class="card-body text-center">
+                <i class="fas fa-key fa-3x text-primary bg-light rounded-circle p-3 my-4"></i>
+                <h5 class="card-title">Conciencia de ciberseguridad</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui,
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 fin -->
+
+          <!-- Card 3-->
+          <div class="col-md-4">
+            <div class="card rounded-0 border-0 mb-4 p-3">
+              <!-- Cardbody -->
+              <div class="card-body text-center">
+                <i class="fas fa-newspaper fa-3x text-primary bg-light rounded-circle p-3 my-4"></i>
+                <h5 class="card-title">Actualizaciones de la industria</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui,
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 fin -->
+
+          <!-- Card 4-->
+          <div class="col-md-4">
+            <div class="card rounded-0 border-0 mb-4 p-3">
+              <!-- Cardbody -->
+              <div class="card-body text-center">
+                <i class="fas fa-user fa-3x text-primary bg-light rounded-circle p-3 my-4"></i>
+                <h5 class="card-title">Redes de colaboración</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui,
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 fin -->
+
+          <!-- Card 5 -->
+          <div class="col-md-4">
+            <div class="card rounded-0 border-0 mb-4 p-3">
+              <!-- Cardbody -->
+              <div class="card-body text-center">
+                <i class="fas fa-handshake fa-3x text-primary bg-light rounded-circle p-3 my-4"></i>
+                <h5 class="card-title">Oportunidades de asociación</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui,
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 5 fin -->
+
+          <!-- Card 6-->
+          <div class="col-md-4">
+            <div class="card rounded-0 border-0 mb-4 p-3">
+              <!-- Cardbody -->
+              <div class="card-body text-center">
+                <i class="fas fa-chart-bar fa-3x text-primary bg-light rounded-circle p-3 my-4"></i>
+                <h5 class="card-title">información basada en datos</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui,
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 fin -->
+        </div>
+        <!-- Row 1 fin -->
+        
+      </div>
+    </section>
+
+    <!-- Subscripcion -->
+    <section id="suscribirse" class="suscribirse my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3 text-center">
+            <h2>Suscríbete a nuestro sitio y recibe las ultimas novedades sobre nuestros cursos y seminarios</h2>
+            <form>
+              <div class="my-4">
+                <input type="email" name="correo" class="form-control form-control-lg" placeholder="Ingresa tu correo electronico">
+                <div class="form-text">
+                  Tus datos están protegidos con nosotros.
+                </div>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Suscribirse </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-4 text-bg-dark py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Info -->
+          <div class="col-md-4">
+            <h5>Lorem Impsu</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat repudiandae perspiciatis repellat. Vero 
+              consequatur tenetur nisi repellat aut laboriosam, impedit voluptatem sit, dolorem corrupti nostrum 
+              aliquid! Esse totam commodi voluptates.
+            </p>
+          </div>
+          <!-- Links -->
+          <div class="col-md-4">
+            <h5>Links:</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#home">Inicio</a>
+              </li>
+              <li>
+                <a href="#detalles">Detalles</a>
+              </li>
+              <li>
+                <a href="#registro">Registro</a>
+              </li>
+              <li>
+                <a href="#beneficios">Beneficios</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Redes sociales -->
+          <div class="col-md-4">
+            <h5>Redes Sociales:</h5>
+            <div class="d-flex gap-3">
+              <a href="#">
+                <i class="fa-brands fa-square-facebook fa-3x text-white"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-instagram-square fa-3x text-white"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-twitter-square fa-3x text-white"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-linkedin fa-3x text-white"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-youtube-square fa-3x text-white"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
